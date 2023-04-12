@@ -28,4 +28,4 @@ jobs:
         with:
           platforms: linux/arm64,linux/amd64
           push: true
-          tags: nivg1992/lpromtail_auth_log:latest
+          tags: nivg1992/promtail_auth_log:latest
