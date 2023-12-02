@@ -20,8 +20,8 @@ scrape_configs:
           expression: '^(?P<time>[^ ]+ +[^ ]+ [^ ]+) +(?P<instance>[^ ]+)'
       - timestamp:
           source: time
-          format: "Dec _2 15:42:12"
-          location: Asia/Jerusalem
+          format: "Jan _2 15:04:05"
+          location: "Asia/Jerusalem"
       - labels:
           instance:
           time:
