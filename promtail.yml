@@ -18,5 +18,9 @@ scrape_configs:
       stages:
       - regex:
           expression: '^(?P<timestamp>[^ ]+ +[^ ]+ [^ ]+) +(?P<instance>[^ ]+)'
+      - timestamp:
+          source: timestamp
+          format: "Dec _2 15:42:12"
+          location: Asia/Jerusalem
       - labels:
           instance:
