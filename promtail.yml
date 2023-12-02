@@ -17,9 +17,9 @@ scrape_configs:
       selector: '{process="auth_logs"}'
       stages:
       - regex:
-          expression: '^(?P<timestamp>[^ ]+ +[^ ]+ [^ ]+) +(?P<instance>[^ ]+)'
+          expression: '^(?P<time>[^ ]+ +[^ ]+ [^ ]+) +(?P<instance>[^ ]+)'
       - timestamp:
-          source: timestamp
+          source: time
           format: "Dec _2 15:42:12"
           location: Asia/Jerusalem
       - labels:
