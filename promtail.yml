@@ -17,6 +17,6 @@ scrape_configs:
       selector: '{process="auth_logs"}'
       stages:
       - regex:
-          expression: '^(?P<timestamp>[^ ]+ [^ ]+ [^ ]+) +(?P<instance>[^ ]+)'
+          expression: '^(?P<timestamp>[^ ]+ +[^ ]+ [^ ]+) +(?P<instance>[^ ]+)'
       - labels:
           instance:
