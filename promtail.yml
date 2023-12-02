@@ -24,4 +24,3 @@ scrape_configs:
           location: "Asia/Jerusalem"
       - labels:
           instance:
-          time:
